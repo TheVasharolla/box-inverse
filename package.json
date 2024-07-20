@@ -1,0 +1,18 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.6"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  },
+  "name": "box-inverse",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss -i ./css/input.css -o ./css/output.css --watch"
+  },
+  "author": "Onnez Anya <chrisleyonyeze@gmail.com>",
+  "license": "ISC",
+  "description": ""
+}

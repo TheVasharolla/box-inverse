@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Box inverse</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/cabinet-grotesk"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <div class="flex flex-col wrapper">
+      <nav class="bg-white fixed w-full z-10">
+        <div class="max-w-screen-xl py-10 mx-auto sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center">
+              <img src="./images/logo.png" alt="" />
+            </div>
+            <div class="-mr-2 flex md:hidden">
+              <button
+                id="menu-button"
+                class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500"
+              >
+                <svg
+                  class="block h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  />
+                </svg>
+                <svg
+                  class="hidden h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="hidden md:flex md:items-center md:space-x-4">
+              <a
+                href="#"
+                class="text-black hover:text-primary transition duration-300 px-3 py-2 rounded-md text-sm"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="text-black hover:text-primary transition duration-300 px-3 py-2 rounded-md text-sm"
+                >About</a
+              >
+              <a
+                href="#"
+                class="text-black hover:text-primary transition duration-300 px-3 py-2 rounded-md text-sm"
+                >Services</a
+              >
+              <a
+                href="#"
+                class="text-black hover:text-primary transition duration-300 pr-7 py-2 rounded-md text-sm"
+                >Contact</a
+              >
+              <span class="flex-grow"></span>
+              <a
+                href="#"
+                class="text-black hover:text-primary transition duration-300 px-3 py-2 rounded-md text-sm font-bold"
+                >Log In</a
+              >
+              <a
+                href="#"
+                class="bg-primary text-black mx-0 px-5 py-2 rounded-full text-sm font-medium hover:bg-secondary transition duration-200"
+                >Sign Up</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="md:hidden max-h-0 overflow-hidden transition-max-height"
+          id="mobile-menu"
+        >
+          <div class="px-2 pt-2 pb-3 text-center space-y-1 sm:px-3">
+            <a
+              href="#"
+              class="text-black hover:text-primary transition block px-3 py-2 rounded-md text-base font-medium"
+              >About</a
+            >
+            <a
+              href="#"
+              class="text-black hover:text-primary transition block px-3 py-2 rounded-md text-base font-medium"
+              >Services</a
+            >
+            <a
+              href="#"
+              class="text-black hover:text-primary transition block px-3 py-2 rounded-md text-base font-medium"
+              >Contact</a
+            >
+            <a
+              href="#"
+              class="text-black hover:text-primary transition block px-3 py-2 rounded-md text-base font-medium"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="text-black hover:text-primary transition block px-3 py-2 rounded-md text-base font-medium"
+              >Log In</a
+            >
+            <a
+              href="#"
+              class="bg-primary text-black block px-3 py-2 rounded-md text-base font-medium hover:bg-secondary"
+              >Sign Up</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <div class="hero_container mx-auto max-w-screen-xl py-56 flex flex-row">
+          <div class="left animate__animated animate__fadeInDown">
+            <h1 class="text-left mb-6 hero_text font-bold">
+              Captivate Your Audience, <br />
+              Elevate Your Brand
+            </h1>
+            <p class="mb-10">
+              Collaboration is at the heart of everything we do. We <br />
+              believe in forging strong partnerships with our clients, <br />
+              understanding their unique needs, and working together <br />
+              achieve outstanding results. Your success is our success.
+            </p>
+            <a
+              href="#"
+              class="bg-primary text-black mx-0 px-16 hero_btn py-3 rounded-full text-sm font-medium hover:bg-secondary transition hover:translate-y-20 duration-300"
+              >Sign Up</a
+            >
+            <img src="./images/hero_heads.png" class="py-10" alt="" />
+          </div>
+          <div class="right w-1/2">
+            <img src="./images/hero.png" class="relative hero_svg" alt="" />
+            <img src="./images/hero_bg.png" class="absolute hero_bg" alt="" />
+          </div>
+        </div>
+      </section>
+      <div class="marquee-container">
+        <div class="marquee marquee-1">
+          <div class="marquee-content">Marquee 1 content</div>
+        </div>
+        <div class="marquee marquee-2">
+          <div class="marquee-content">Marquee 2 content</div>
+        </div>
+      </div>
+
+    <script src="./js/index.js" async defer></script>
+  </body>
+</html>

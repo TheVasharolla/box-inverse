@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Cabinet Grotesk";
+}
+
+.hero_text {
+  font-size: 48px;
+}
+
+.hero_bg {
+  width: 90%;
+  right: 0%;
+  bottom: 40px;
+  z-index: -1;
+}
+
+.hero_svg {
+  left: 200px;
+  animation: moveUpDown 2s ease-in-out infinite;
+  bottom: 100px;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0); /* initial position */
+  }
+  50% {
+    transform: translateY(-20px); /* move up by 20px */
+  }
+  100% {
+    transform: translateY(0); /* return to initial position */
+  }
+}
+
+.hero_btn:hover {
+  box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY("-20px");
+}
+
+.marquee-container {
+  position: relative;
+  width: 100%;
+  height: 200px; /* adjust the height to your needs */
+  overflow: hidden;
+}
+
+.marquee {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg); /* rotate at 45deg angle */
+  background-color: #00ff00; /* green background */
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.marquee-1 {
+  animation: marquee-1 10s linear infinite;
+}
+
+.marquee-2 {
+  animation: marquee-2 10s linear infinite;
+  transform: translate(-50%, -50%) rotate(-45deg); /* rotate at -45deg angle */
+}
+
+.marquee-content {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+@keyframes marquee-1 {
+  0% {
+    transform: translate(-100%, -50%) rotate(45deg);
+  }
+  100% {
+    transform: translate(100%, -50%) rotate(45deg);
+  }
+}
+
+@keyframes marquee-2 {
+  0% {
+    transform: translate(100%, -50%) rotate(-45deg);
+  }
+  100% {
+    transform: translate(-100%, -50%) rotate(-45deg);
+  }
+}
+
+.marquee:hover {
+  animation-play-state: paused; /* pause the animation on hover */
+}
+
+.marquee:hover.animate-slow {
+  animation-play-state: running; /* resume the animation on hover */
+  animation-duration: 20s; /* slow down the animation */
+  animation-timing-function: linear; /* keep the animation linear */
+}
