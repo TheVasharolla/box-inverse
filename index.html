@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -26,7 +22,7 @@
         <div class="max-w-screen-xl my-10 py-0 mx-auto sm:px-6 lg:px-8">
           <div class="flex items-center justify-between">
             <div class="flex items-center">
-              <img src="./images/logo.png" alt="" />
+              <img src="./images/logo.png" alt="Logo" />
             </div>
             <div class="-mr-2 flex md:hidden">
               <button
@@ -104,7 +100,7 @@
           class="md:hidden max-h-0 overflow-hidden transition-max-height"
           id="mobile-menu"
         >
-          <div class="px-2 pt-2 pb-3 text-center space-y-1 sm:px-3">
+          <div class="px-2 pt-2 pb-3 text-center space-y-1">
             <a
               href="#"
               class="text-black hover:text-primary transition block px-3 py-2 rounded-md text-base font-medium"
@@ -140,9 +136,13 @@
       </nav>
 
       <section class="hero">
-        <div class="hero_container mx-auto md:justify-center lg:justify-start md:items-center max-w-screen-xl sm:px-6 lg:px-8 py-40 flex flex-row">
+        <div
+          class="hero_container mx-auto md:justify-center lg:justify-start md:items-center max-w-screen-xl px-6 lg:px-8 py-40 flex flex-row"
+        >
           <div class="left animate__animated animate__fadeInDown">
-            <h1 class="text-left md:text-center lg:text-left mb-6 hero_text font-bold">
+            <h1
+              class="text-left md:text-center lg:text-left mb-6 hero_text font-bold"
+            >
               Captivate Your Audience, <br />
               Elevate Your Brand
             </h1>
@@ -150,23 +150,27 @@
               Collaboration is at the heart of everything we do. We <br />
               believe in forging strong partnerships with our clients, <br />
               understanding their unique needs, and working together <br />
-              achieve outstanding results. Your success is our success.
+              to achieve outstanding results. Your success is our success.
             </p>
             <a
               href="#"
-              class="bg-primary md:items-center md:justify-center md:text-center text-black mx-0 px-16 hero_btn translate-x-4 py-3 rounded-full text-sm font-medium hover:bg-secondary transition hover:translate-y-20 duration-300"
+              class="bg-primary md:items-center md:justify-center md:text-centesm text-black mx-0 px-16 hero_btn translate-x-4 py-3 rounded-full text-sm font-medium hover:bg-secondary transition hover:translate-y-20 duration-300"
               >Sign Up</a
             >
-            <img src="./images/hero_heads.png" class="py-10" alt="" />
+            <img src="./images/hero_heads.png" class="py-10" alt="Hero Heads" />
           </div>
-          <div class="right lg:flex md:hidden sm:hidden w-1/2">
-            <img src="./images/hero.png" class="relative hero_svg" alt="" />
-            <img src="./images/hero_bg.png" class="absolute hero_bg" alt="" />
+          <div class="right sm:hidden lg:flex md:hidden w-1/2">
+            <img src="./images/hero.png" class="relative hero_svg" alt="Hero" />
+            <img
+              src="./images/hero_bg.png"
+              class="absolute hero_bg"
+              alt="Hero Background"
+            />
           </div>
         </div>
       </section>
 
-      <div class="marquee-container md:pt-20  overflow-x-clip">
+      <div class="marquee-container md:pt-20 overflow-x-clip">
         <div class="marquee marquee-1">
           <div class="marquee-content">
             <ul class="flex animate-slow transition">
@@ -183,35 +187,271 @@
           </div>
         </div>
         <div class="marquee marquee-2">
-          <div class="marquee-content2"><ul class="flex">
-            <li class="mx-4 font-bold">ADVERTISEMENT</li>
-            <li class="mx-4 font-bold">MARKETING</li>
-            <li class="mx-4 font-bold">BRANDING</li>
-            <li class="mx-4 font-bold">ADVERTISEMENT</li>
-            <li class="mx-4 font-bold">MARKETING</li>
-            <li class="mx-4 font-bold">BRANDING</li>
-            <li class="mx-4 font-bold">ADVERTISEMENT</li>
-            <li class="mx-4 font-bold">MARKETING</li>
-            <li class="mx-4 font-bold">BRANDING</li>
-          </ul></div>
+          <div class="marquee-content2">
+            <ul class="flex">
+              <li class="mx-4 font-bold">ADVERTISEMENT</li>
+              <li class="mx-4 font-bold">MARKETING</li>
+              <li class="mx-4 font-bold">BRANDING</li>
+              <li class="mx-4 font-bold">ADVERTISEMENT</li>
+              <li class="mx-4 font-bold">MARKETING</li>
+              <li class="mx-4 font-bold">BRANDING</li>
+              <li class="mx-4 font-bold">ADVERTISEMENT</li>
+              <li class="mx-4 font-bold">MARKETING</li>
+              <li class="mx-4 font-bold">BRANDING</li>
+            </ul>
+          </div>
         </div>
-        
-        <section class="reason">
-          <div class="reason_container max-w-screen-xl flex flex-row mx-auto">
-            <div class="reason_illustration">
-              <img src="./images/reason_svg.png" alt="">
+      </div>
+
+      <section class="reason">
+        <div
+          class="reason_container sm:justify-center md:text-left md:justify-between lg:justify-between lg:text-left sm:text-center justify-between max-w-screen-xl flex flex-row mx-auto"
+        >
+          <div class="reason_illustration md:block lg:block sm:hidden">
+            <img src="./images/reason_svg.png" alt="Reason Illustration" />
+          </div>
+          <div
+            class="reason_text scroll-fade-in"
+            data-animation="animate__fadeInDown"
+          >
+            <h1 class="font-bold mb-4">Why Us?</h1>
+            <div class="reason_text_inner flex flex-row" id="reason1">
+              <h2 class="font-bold text-primary">1</h2>
+              <p class="ml-7">
+                Collaboration is at the heart of everything we do. We <br />
+                believe in forging strong partnerships with our clients,
+                <br />
+                understanding their unique needs, and working <br />
+                together to achieve outstanding results.
+              </p>
             </div>
-            <div class="reason_text">
-              <h1 class="font-bold">Why Us?</h1>
-              <div class="reason-text-inner flex flex-row">
-                <h2>1</h2>
-                <p>Collaboration is at the heart of everything we do. We believe in forging strong partnerships with our clients, understanding their unique needs, and working together to achieve outstanding results.</p>
+            <div class="reason_text_inner mb-5 flex-row flex">
+              <h2 class="font-bold text-primary">2</h2>
+              <p class="ml-7">
+                Collaboration is at the heart of everything we do. We <br />
+                believe in forging strong partnerships with our clients,
+                <br />
+                understanding their unique needs, and working <br />
+                together to achieve outstanding results. Your success <br />
+                is our success.
+              </p>
+            </div>
+            <div class="reason_text_inner flex flex-row">
+              <h2 class="font-bold text-primary">3</h2>
+              <p class="ml-7">
+                Collaboration is at the heart of everything we do. We <br />
+                believe in forging strong partnerships with our clients,
+                <br />
+                understanding their unique needs, and working <br />
+                together to achieve outstanding results.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="more_reasons">
+        <div
+          class="more_reasons-container justify-between max-w-screen-xl mx-auto flex sm:flex-col md:flex-col lg:flex-row"
+        >
+          <div class="more_reasons-card justify-center items-center">
+            <div class="flex card-image sm:hidden md:hidden lg:block absolute">
+              <img class="block" src="./images/more_one.png" alt="More One" />
+            </div>
+            <div class="card-content">
+              <h2 class="text-left sm:hover:mt-0 pb-5">
+                Collaborate with <br />
+                like brands and <br />
+                gain insights into <br />
+                marketing tools
+              </h2>
+            </div>
+          </div>
+          <div class="more_reasons-card">
+            <div class="card-image sm:hidden lg:block absolute">
+              <img src="./images/more_two.png" alt="More Two" />
+            </div>
+            <div class="card-content">
+              <h2 class="text-left sm:hover:mt-0">
+                Engage with <br />
+                like brands and <br />
+                gain insights into <br />
+                marketing tools
+              </h2>
+            </div>
+          </div>
+          <div class="more_reasons-card">
+            <div class="card-image sm:hidden lg:block absolute">
+              <img src="./images/more_three.png" alt="More Three" />
+            </div>
+            <div class="card-content">
+              <h2 class="text-left sm:mt-0 sm:hover:mt-0">
+                Study trends with <br />
+                like brands and <br />
+                gain insights into <br />
+                marketing tools
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="features bg-black">
+        <div
+          class="features_container justify-between my-10 py-40 flex sm:px-3 flex-row lg:max-w-screen-xl mx-auto"
+        >
+          <div class="features_text">
+            <h2 class="text-left pb-5 font-bold text-white">
+              Captivate Your Audience, <br />
+              Elevate Your Brand
+            </h2>
+            <p class="text-white mb-10">
+              Collaboration is at the heart of everything we do. We believe in
+              <br />
+              forging strong partnerships with our clients, understanding their
+              <br />
+              unique needs, and working together to achieve outstanding results.
+              <br />
+              Your success is our success.
+            </p>
+            <p class="text-white mb-10">
+              Collaboration is at the heart of everything we do. We believe in
+              <br />
+              forging strong partnerships with our clients, understanding their
+              <br />
+              unique needs, and working together to achieve outstanding results.
+              <br />
+              Your success is our success.
+            </p>
+            <p class="text-white mb-10">
+              Collaboration is at the heart of everything we do. We believe in
+              forging strong <br />
+              partnerships with our clients, understanding their unique needs,
+              and working <br />together to achieve outstanding results. Your
+              success is our success.
+            </p>
+            <a
+              href="#"
+              class="bg-primary md:items-center md:justify-center md:text-center text-black mx-0 px-16 py-3 rounded-full text-sm font-medium hover:bg-secondary transition duration-500"
+              >Sign Up</a
+            >
+          </div>
+          <div
+            class="features_illustration sm:hidden lg:block scroll-fade-in"
+            data-animation="animate__bounceIn"
+          >
+            <img src="./images/features.png" alt="Features" />
+          </div>
+        </div>
+      </section>
+
+      <section class="numbers bg-white">
+        <div class="numbers_container flex flex-col py-10">
+          <div
+            class="numbers_head-text max-w-screen-xl mx-auto justify-center items-center mb-10 text-center"
+          >
+            <h2 class="font-bold">Our Numbers</h2>
+            <p class="font-medium">
+              Collaboration is at the heart of everything we do. We believe in
+              forging strong partnerships with our clients, <br />
+              understanding their unique needs, and working together to achieve
+              outstanding results. Your success is our success.
+            </p>
+          </div>
+          <div class="numbers_img justify-center items-center flex ml-12 pb-10">
+            <img src="./images/numbers_img.png" alt="Numbers" />
+            <div class="numbers_img-gradient"></div>
+          </div>
+          <div
+            class="numbers_main max-w-screen-xl justify-stretch text-center sm:flex-col sm:space-y-6 mx-auto flex lg:flex-row"
+          >
+            <h2 class="px-20">
+              <p class="font-bold text-5xl">
+                <span class="counter" data-target="1241">0</span>
+              </p>
+              <p class="font-normal text-4xl">Clients</p>
+            </h2>
+            <h2 class="px-20">
+              <p class="font-bold text-5xl">
+                <span class="counter" data-target="5">0</span>
+              </p>
+              <p class="font-normal text-4xl">Continents</p>
+            </h2>
+            <h2 class="px-20">
+              <p class="font-bold text-5xl">
+                <span class="counter" data-target="89">0</span>
+              </p>
+              <p class="font-normal text-4xl">Countries</p>
+            </h2>
+            <h2 class="px-20">
+              <p class="font-bold text-5xl">
+                <span class="counter" data-target="1000">0</span>
+              </p>
+              <p class="font-normal text-4xl">Workers</p>
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="touch">
+        <div
+          class="touch_container sm:max-w-screen-sm sm:mx-auto sm:justify-center sm:py-4 max-w-screen-xl mx-auto items-center justify-between my-32 rounded-3xl px-44 bg-black flex flex-row"
+        >
+          <div class="touch_img sm:hidden md:block lg:block">
+            <img src="./images/touch.png" alt="" />
+          </div>
+          <div class="touch_text text-white">
+            <h2 class="font-bold text-3xl mb-4">Want to keep in touch?</h2>
+            <p class="mb-7">
+              Collaboration is at the heart of everything we do. We believe in
+              <br />
+              forging strong partnerships with our clients, understanding their
+            </p>
+            <div class="touch_input sm:bg-none sm:flex sm:flex-row bg-white rounded-full">
+              <input
+                type="email"
+                name="touch_email"
+                placeholder="Enter an email, please"
+                id="touch_email"
+                class="h-16  bg-white text-black p-2 mx-10 rounded-full"
+              />
+              <a
+                href="#"
+                class="bg-primary md:items-center md:justify-center md:text-center sm:items-center sm:justify-center sm:text-center text-black mx-0 px-8 py-3 sm: rounded-full text-sm font-bold hover:bg-secondary transition duration-500"
+                >Subscribe</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer">
+        <div class="footer_container py-20">
+          <div class="footer_inner-container flex flex-row justify-between max-w-screen-xl mx-auto">
+            <div class="footer_logo">
+              <img src="./images/logo.png" alt="">
+            </div>
+            <div class="footer_links flex flex-row text-center">
+              <div class="footer_link">
+                <h2 class="footer_link-header font-bold text-2xl">About Us</h2>
+                <p class="mx-10 py-3 font-medium">About Us</p>
+                <p class="mx-10 py-3 font-medium">About Us</p>
+              </div>
+              <div class="footer_link">
+                <h2 class="footer_link-header font-bold text-2xl">Service</h2>
+                <p class="mx-10 py-3 font-medium">Service</p>
+                <p class="mx-10 py-3 font-medium">Service</p>
+              </div>
+              <div class="footer_link">
+                <h2 class="footer_link-header font-bold text-2xl">Contact</h2>
+                <p class="mx-10 py-3 font-medium">Contact</p>
+                <p class="mx-10 py-3 font-medium">Contact</p>
               </div>
             </div>
           </div>
-        </section>
-      </div>
-
+        </div>
+      </section>
+    </div>
     <script src="./js/index.js" async defer></script>
   </body>
 </html>

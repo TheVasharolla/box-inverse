@@ -9,6 +9,13 @@ module.exports = {
         secondary: "#4DAE3D"
       }
     },
+    breakpoints: {
+      'sm': '400px', // updated value
+      'md': '1024px',
+      'lg': '1280px',
+      'xl': '1536px',
+      '2xl': '1920px',
+    },
   },
   plugins: [],
 }

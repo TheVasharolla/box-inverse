@@ -8,16 +8,44 @@ document.getElementById('menu-button').onclick = function() {
       menu.classList.add('max-h-0');
   }
 }
+const elements = document.querySelectorAll('.scroll-fade-in');
 
-const marqueeInner = document.getElementById('marquee-inner');
-const marqueeContent = document.getElementById('marquee-content');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const animationClass = entry.target.getAttribute('data-animation');
+      entry.target.classList.add('animate__animated', animationClass);
+      return;
+    }
+    entry.target.classList.remove('animate__animated', animationClass);
+  });
+});
 
-// Set the width of the marquee content to the total width of all its children
-marqueeContent.style.width = Array.prototype.reduce.call(marqueeContent.children, (acc, curr) => acc + curr.offsetWidth, 0) + 'px';
+elements.forEach((element) => observer.observe(element));
 
-// Set the animation direction based on the rotation angle
-if (marqueeInner.style.transform.includes('rotate(45deg)')) {
-  marqueeContent.style.animationDirection = 'reverse';
-} else {
-  marqueeContent.style.animationDirection = 'normal';
-}
+const counters = document.querySelectorAll('.counter');
+
+const counterWatcher = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const counter = entry.target;
+      const target = parseInt(counter.getAttribute('data-target'));
+      let currentCount = 0;
+      const increment = Math.ceil(target / 100); // adjust this value to change the speed of the counter
+
+      const interval = setInterval(() => {
+        currentCount += increment;
+        counter.textContent = currentCount;
+
+        if (currentCount >= target) {
+          clearInterval(interval);
+          counter.textContent = target;
+        }
+      }, 20); // adjust this value to change the speed of the counter
+    }
+  });
+}, { threshold: 1.0 });
+
+counters.forEach((counter) => {
+  counterWatcher.observe(counter);
+});

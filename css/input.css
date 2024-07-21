@@ -95,3 +95,127 @@
     transform: translateX(100%);
   }
 }
+
+.reason_container {
+  margin-top: -50px;
+  padding-bottom: 30px;
+}
+
+
+#reason1 {
+  margin-left: 22px;
+}
+
+.reason_illustration img {
+  width: 500px;
+  height: 100%;
+  
+}
+
+.reason_text h1 {
+  font-size: 48px;
+  margin-left: 14%;
+}
+
+.reason_text .reason_text_inner h2 {
+  font-size: 96px;
+}
+
+
+.reason_text .reason_text_inner p {
+  font-size: 20px;
+}
+
+.more_reasons-container {
+  padding-top: 15%;
+  padding-bottom: 5%;
+}
+
+.more_reasons-card {
+  background-color: #fff;
+  border-radius: 30px;
+  border-left: 5px solid #000;
+  border-top: 5px solid #000;
+  margin: 20px auto;
+  padding: 20px;
+  width: 350px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.more_reasons-card:hover {
+  margin-top: -30px;
+}
+
+.more_reasons-card .card-content {
+  margin-top: 40%;
+  font-size: 36px;
+}
+.more_reasons-card .card-image {
+  margin-top: -10%;
+}
+
+@media (min-width: 640px) {
+  .more_reasons-card .card-content {
+    margin-top: 0;
+  }
+}
+@media (min-width: 768px) {
+  .more_reasons-card .card-content {
+    margin-top: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .more_reasons-card .card-content {
+    margin-top: 45%;
+  }
+}
+
+.features_text h2 {
+  font-size: 48px;
+}
+
+.features_text a:hover {
+  transform: translateY(-20px);
+  box-shadow: 4px 10px 20px #00ff00;
+}
+
+.features_illustration img {
+
+  animation: moveUpDown 2s ease-in-out infinite;
+}
+
+.numbers_head-text h2 {
+  font-size: 41px;
+}
+
+.numbers_img {
+  position: relative; /* Add relative positioning to the container */
+}
+
+.numbers_img img {
+  display: block;
+  z-index: 9;
+}
+
+.numbers_img-gradient {
+  position: absolute; /* Position the gradient div absolutely */
+  top: 45%; /* Top edge of the gradient div aligns with the top edge of the container */
+  left: 0; /* Left edge of the gradient div aligns with the left edge of the container */
+  width: 100%; /* Set the gradient div width to 100% */
+  height: 100%; /* Set the gradient div height to 100% */
+  background-image: linear-gradient(to top, #fff, #42FF00CC);
+  background-size: 100% 50%;
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+}
+
+.numbers_main {
+  z-index: 8;
+}
+
+.footer_container {
+  border-radius: 30px;
+  border-left: 2px solid #000;
+  border-top: 2px solid #000;
+}
