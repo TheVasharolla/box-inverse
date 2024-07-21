@@ -575,9 +575,19 @@ video {
   margin-right: 0px;
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .-mr-2 {
@@ -608,6 +618,10 @@ video {
   display: none;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .h-6 {
   height: 1.5rem;
 }
@@ -634,6 +648,11 @@ video {
 
 .flex-grow {
   flex-grow: 1;
+}
+
+.translate-x-4 {
+  --tw-translate-x: 1rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .flex-row {
@@ -664,6 +683,10 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-clip {
+  overflow-x: clip;
 }
 
 .rounded-full {
@@ -708,6 +731,11 @@ video {
   padding-right: 1.25rem;
 }
 
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -723,9 +751,9 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.py-56 {
-  padding-top: 14rem;
-  padding-bottom: 14rem;
+.py-40 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .pb-3 {
@@ -794,6 +822,7 @@ video {
 
 * {
   font-family: "Cabinet Grotesk";
+  scroll-behavior: smooth;
 }
 
 .hero_text {
@@ -832,7 +861,7 @@ video {
 
 .hero_btn:hover {
   box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.3);
-  transform: translateY("-20px");
+  transform: translateY(-20px);
 }
 
 .marquee-container {
@@ -840,69 +869,61 @@ video {
   width: 100%;
   height: 200px;
   /* adjust the height to your needs */
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .marquee {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
+  /* top: 50%; */
+  left: 0;
+  width: 110%;
+  height: 40px;
+  /* adjust the height to your needs */
   /* rotate at 45deg angle */
   background-color: #00ff00;
   /* green background */
   padding: 10px;
-  white-space: nowrap;
 }
 
 .marquee-1 {
-  animation: marquee-1 10s linear infinite;
+  top: -55%;
+  transform: translateY(-50%) rotate(-2deg);
 }
 
 .marquee-2 {
-  animation: marquee-2 10s linear infinite;
-  transform: translate(-50%, -50%) rotate(-45deg);
+  top: -53%;
+  transform: translateY(-50%) rotate(2deg);
   /* rotate at -45deg angle */
 }
 
 .marquee-content {
-  font-size: 24px;
-  font-weight: bold;
-  color: #fff;
+  white-space: nowrap;
+  animation: marquee-text1 15s linear infinite;
 }
 
-@keyframes marquee-1 {
+.marquee-content2 {
+  justify-content: center;
+  animation: marquee-text 15s linear infinite;
+}
+
+@keyframes marquee-text {
   0% {
-    transform: translate(-100%, -50%) rotate(45deg);
+    transform: translateX(100%);
   }
 
   100% {
-    transform: translate(100%, -50%) rotate(45deg);
+    transform: translateX(-100%);
   }
 }
 
-@keyframes marquee-2 {
+@keyframes marquee-text1 {
   0% {
-    transform: translate(100%, -50%) rotate(-45deg);
+    transform: translateX(-100%);
   }
 
   100% {
-    transform: translate(-100%, -50%) rotate(-45deg);
+    transform: translateX(100%);
   }
-}
-
-.marquee:hover {
-  animation-play-state: paused;
-  /* pause the animation on hover */
-}
-
-.marquee:hover.animate-slow {
-  animation-play-state: running;
-  /* resume the animation on hover */
-  animation-duration: 20s;
-  /* slow down the animation */
-  animation-timing-function: linear;
-  /* keep the animation linear */
 }
 
 .hover\:translate-y-20:hover {
@@ -946,6 +967,10 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:px-3 {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
@@ -970,16 +995,40 @@ video {
     align-items: center;
   }
 
+  .md\:justify-center {
+    justify-content: center;
+  }
+
   .md\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(1rem * var(--tw-space-x-reverse));
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
   }
+
+  .md\:pt-20 {
+    padding-top: 5rem;
+  }
+
+  .md\:text-center {
+    text-align: center;
+  }
 }
 
 @media (min-width: 1024px) {
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:justify-start {
+    justify-content: flex-start;
+  }
+
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .lg\:text-left {
+    text-align: left;
   }
 }
